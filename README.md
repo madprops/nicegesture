@@ -29,18 +29,7 @@ NiceGesture.start(container, {
     // Do something
   },
   default: (e) => {
-    if (App.cursor_on_item(e, App.window_mode)) {
-      let item = App.get_cursor_item(App.window_mode, e)
-
-      if (!item.highlighted) {
-        if (App.get_highlights(App.window_mode).length > 0) {
-          App.pick_item(item)
-        }
-      }
-
-      App.show_item_menu(item, e.clientX, e.clientY)
-      e.preventDefault()
-    }
+    // On normal right click
   }
 })
 ```
