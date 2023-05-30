@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: aqua;
+        font-family: sans-serif;
+      }
+
+      #main {
+        width: 90vw;
+        height: 90vh;
+        background-color: blue;
+        border: 4px solid red;
+        color: white;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+
+    <script src="msg.min.js"></script>
+    <script src="nicegesture.js"></script>
+
+    <script>
+      function popup (s) {
+        let p = Msg.factory({
+          preset: "popup_autoclose",
+        })
+
+        p.show(s)
+      }
+
+      window.onload = () => {
+        NiceGesture.start(document.getElementById("main"), {
+          default: (e) => {
+            popup(`Default action`)
+          },
+          up: (e) => {
+            popup(`Up action`)
+          },
+          down: (e) => {
+            popup(`Down action`)
+          },
+          left: (e) => {
+            popup(`Left action`)
+          },
+          right: (e) => {
+            popup(`Right action`)
+          },
+          up_and_down_1: (e) => {
+            popup(`Up and down action 1`)
+          },
+          up_and_down_2: (e) => {
+            popup(`Up and down action 2`)
+          },
+          left_and_right_1: (e) => {
+            popup(`Left and right action 1`)
+          },
+          left_and_right_2: (e) => {
+            popup(`Left and right action 2`)
+          },
+        })
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="main">
+      Hold "right click" and move the mouse then release.
+      <br>
+      Try up, down, left, right, up and down, left and right.
+    </div>
+  </body>
+</html>
