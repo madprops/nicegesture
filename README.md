@@ -42,7 +42,7 @@ NiceGesture.start(container, {
 // Enable gestures or not
 NiceGesture.enabled = true
 
-// Can be `right` or `middle`
+// Can be `left`, `right`, or `middle`
 NiceGesture.button = `right`
 
 // The bigger the less sensitive it is
