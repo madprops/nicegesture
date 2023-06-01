@@ -39,6 +39,9 @@ NiceGesture.start(container, {
 ## Variables
 
 ```js
+// Enable gestures or not
+NiceGesture.enabled = true
+
 // Can be `right` or `middle`
 NiceGesture.button = `right`
 
