@@ -47,3 +47,4 @@ NiceGesture.button = `right`
 
 // The bigger the less sensitive it is
 NiceGesture.threshold = 10
+```
