@@ -16,16 +16,10 @@ NiceGesture.start(container, {
   right: (e) => {
     // Do something
   },
-  up_and_down_1: (e) => {
+  up_and_down: (e) => {
     // Do something
   },
-  up_and_down_2: (e) => {
-    // Do something
-  },
-  left_and_right_1: (e) => {
-    // Do something
-  },
-  left_and_right_2: (e) => {
+  left_and_right: (e) => {
     // Do something
   },
   default: (e) => {
