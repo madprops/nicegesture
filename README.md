@@ -33,3 +33,14 @@ NiceGesture.start(container, {
   }
 })
 ```
+
+---
+
+## Variables
+
+```js
+// Can be `right` or `middle`
+NiceGesture.button = `right`
+
+// The bigger the less sensitive it is
+NiceGesture.threshold = 10
