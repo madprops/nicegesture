@@ -38,8 +38,8 @@ NiceGesture.start(container, {
 // Enable gestures or not
 NiceGesture.enabled = true
 
-// Can be `left`, `right`, or `middle`
-NiceGesture.button = `right`
+// It's meant to work with middle click
+NiceGesture.button = 1
 
 // The bigger the less sensitive it is
 NiceGesture.threshold = 10
